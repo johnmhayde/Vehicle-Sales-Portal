@@ -1,0 +1,1 @@
+INSERT INTO vehicle VALUES ('2FMDK3KC7BBA78129', 'Black', 'Ford', 'Edge', 100000, 2011, 8000);
