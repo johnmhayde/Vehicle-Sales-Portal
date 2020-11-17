@@ -6,7 +6,7 @@ CREATE TABLE vehicle (
   vin      VARCHAR(20),
   color    VARCHAR(15),
   make     VARCHAR(20),
-  model    VARCHAR(20),
+  model    VARCHAR(50),
   mileage  INT(20),
   year     INT(4),
   price    INT(10)
