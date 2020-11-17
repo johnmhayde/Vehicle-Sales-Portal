@@ -1,1 +1,1 @@
-LOAD DATA LOCAL INFILE 'vehicle_sample.txt' INTO TABLE vehicle;
+LOAD DATA LOCAL INFILE './data/vehicles.txt' INTO TABLE vehicle;

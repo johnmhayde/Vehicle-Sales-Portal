@@ -42,9 +42,9 @@ for i in data["results"]:
 	outString += "\t"
 	outString += str(random.randrange(400000))
 	outString += "\t"
-	outString += str(i["Year"])
+	outString += str(random.randrange(1980, 2021))
 	outString += "\t"
-	outString += str(random.randrange(100000))
+	outString += str(random.randrange(5000, 100000))
 	print(outString)
 
 inFile.close()
