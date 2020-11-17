@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+		<link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
     <h1>Sample Data</h1>
-    <table>
+    <table class="center">
       <tr>
         <th>Name</th>
         <th>Owner</th>
@@ -37,7 +38,7 @@ echo "</table>";
 } else { echo "0 results"; }
 $conn->close();
 ?>
-
+	<br></br>
   <a href="index.html">Home Page</a>
 
   </body>

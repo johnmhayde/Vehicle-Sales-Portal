@@ -6,7 +6,7 @@ import urllib
 import requests
 
 # create usl with proper request headers
-url = 'https://parseapi.back4app.com/classes/Car_Model_List?limit=100'
+url = 'https://parseapi.back4app.com/classes/Car_Model_List?limit=1000'
 headers = {
     'X-Parse-Application-Id': 'hlhoNKjOvEhqzcVAJ1lxjicJLZNVv36GdbboZj3Z',
     'X-Parse-Master-Key': 'SNMJJF0CZZhTPhLDIqGhTlUNV9r60M2Z5spyWfXW'
