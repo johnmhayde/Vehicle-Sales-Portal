@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
-    <h1>Sample Data</h1>
+    <h1 id="sample_data">Sample Data</h1>
     <table class="center">
       <tr>
         <th>Name</th>

@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				die("Connection failed: " . $conn->connect_error);
 			}
 			// Verify user input with data stored in table
-			$sql = "SELECT username, password FROM user WHERE username = '$_POST[username]'";
+			$sql = "SELECT username, password FROM admin WHERE username = '$_POST[username]'";
 			$result = $conn->query($sql);
 			// check to see if user is in system
 			if(mysqli_num_rows($result) > 0) {
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 					else {
 						echo "<h3>Password is incorrect, try again.</h3>";
 						sleep(3);
-						echo "<script> window.location.assign('../user_login.php'); </script>";
+						echo "<script> window.location.assign('../admin_login.php'); </script>";
 					}
 				}
 			}
@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				// Did not find username in system
 				echo "<h3>Could not find username in system, try again.</h3>";
 				sleep(3);
-				echo "<script> window.location.assign('../user_login.php'); </script>";
+				echo "<script> window.location.assign('../admin_login.php'); </script>";
 			}
 			mysqli_close($conn);
   }
