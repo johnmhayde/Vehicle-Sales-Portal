@@ -103,7 +103,7 @@
       <input type="text" name="password_confir" value="<?php echo $password_confir;?>">
       <span class="error">* <?php echo $password_confirErr;?></span><br>
       <span class="error"><?php echo $matchErr;?></span><br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit"><br><br>
     </form>
     <a href="index.html">Home Page</a>
 

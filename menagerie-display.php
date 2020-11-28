@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+		<link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
-    <h1>Sample Data</h1>
-    <table>
+    <h1 id="sample_data">Sample Data</h1>
+    <table class="center">
       <tr>
         <th>Name</th>
         <th>Owner</th>
@@ -18,6 +19,10 @@
 
 <?php
 $conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+//$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "menagerie");
+// for production server
+// $conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+>>>>>>> 2bc7b9ccbf791db9e464432ed9cccebb594b7da5
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -35,7 +40,7 @@ echo "</table>";
 } else { echo "0 results"; }
 $conn->close();
 ?>
-
+	<br></br>
   <a href="index.html">Home Page</a>
 
   </body>
