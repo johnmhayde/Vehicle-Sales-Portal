@@ -74,7 +74,7 @@
     filling all boxes and keep correct info in table so user does not have
     to re-enter everything on post with incorrect info. -->
     <h1>New User Registration</h1>
-    <form method="post">
+    <form method="post" action="php/add_new_user.php">
       <label for="fname">First Name:</label><br>
       <input type="text" name="fname" value="<?php echo $fname;?>">
       <span class="error">* <?php echo $fnameErr;?></span><br>

@@ -19,8 +19,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       // Redirect user to home page
       echo "<script> window.location.assign('../homepage.php'); </script>";
   }
-}
-else {
-	echo "<script> window.location.assign('../register.php'); </script>";
+	else {
+	echo "<h3>Form is incorrect, try again</h3>";
+	sleep(3);
+	echo "<script> window.location.assign('../register.php');</script>";
+	}	
 }
 ?>
