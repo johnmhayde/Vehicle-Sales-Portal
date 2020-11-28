@@ -17,7 +17,7 @@
       </tr>
 
 <?php
-$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "menagerie");
+$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
