@@ -47,8 +47,8 @@
 			//handle for just searching make
 			if ($counter == 1) {
 				// Create sql query for just make
-				//$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
-				$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
+				$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+				//$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
 				// check connection
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
@@ -78,16 +78,16 @@
 			}
 			else {
 				// Create sql query for each value not left blank
-				//$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
-				$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
+				$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+				//$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
 				// check connection
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
 				}
 				// search for all fields
-				$sql = "SELECT * FROM vehicle WHERE make = '$array[0]' AND model = '$array[1]' AND color = '$array[2]' AND mileage < '$array[3]' AND year > '$array[4]' AND price < '$array[5]')";
+				$sql = "SELECT * FROM vehicle WHERE make = '$array[0]' AND model = '$array[1]' AND color = '$array[2]' AND mileage < '$array[3]' AND year > '$array[4]' AND price < '$array[5]';";
 				$result = $conn->query($sql);
-				if ($result->num_rows > 0) {
+				if ($result && $result->num_rows > 0) {
 					echo "<table class='center'>
 						<tr>
 							<th>VIN</th>
@@ -107,7 +107,7 @@
 				}
 				// couldn't match all fields to any vehicle, search just make and model
 				else {
-					echo "Could not find any vehicles matching your search. Here are all of the vehicles mathcing the requested make and model in stock.";
+					echo "Showing results for vehicles mathcing the requested make and model in stock.";
 					$sql = "SELECT * FROM vehicle WHERE make = '$array[0]' AND model = '$array[1]'";
 					$result = $conn->query($sql);
 					if ($result->num_rows > 0) {
