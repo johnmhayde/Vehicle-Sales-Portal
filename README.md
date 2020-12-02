@@ -1,1 +1,40 @@
 # Vehicle-Sales-Portal
+
+## Team Members
+John Michael Hayde: jhayde@clemson.edu
+
+# Structure of Source Code
+My source code has a very simple structure. All front-facing pages that are
+accessible by clicking on links shown on the  pages are on the main directory.
+This includes files such as index.html, and any files you can access from there.
+There are a number of folders within the source directory that contain code for  
+specific purposes. Those directories and their purposes are as follows:
+
+### css
+This folder contains all css files. These files are used for styling the error
+messages and tables.
+
+### data
+This folder contains all of the code and data related to the vehicles. This
+includes python scripts for pulling vehicle data from a source on the internet,
+generating the missing information (VIN, price, mileage), and writing that
+information to a .txt file.
+
+### javascript
+This file would contain any relevant javascript code for the project. I did not
+get to the point where I was able to add any into the portal, so it is empty.
+
+### php
+This folder contains php code that is strictly for backend handling purposes.
+This code is responsible for actions such as verifying user information or
+backing up the database tables. None of this code is accessible via a link on the site, it is all called from other pages (ex. on click of a submit button).
+
+### Reports
+This folder contains the reports written for this project.
+
+### sql
+This folder contains all of the  sql statements developed for the project.
+
+### table_backups
+This folder contains all of the database backup files in JSON format. It is where the files
+get written to when new ones are generated at the admin's request.
