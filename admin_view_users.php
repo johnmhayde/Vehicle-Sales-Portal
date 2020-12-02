@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Admin Search Users</title>
+		<link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
     <h1>Admin Search Users</h1>

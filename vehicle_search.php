@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Vehicle Search Page</title>
+		<link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
     <h1>Vehicle Search Page</h1>
@@ -47,8 +48,8 @@
 			//handle for just searching make
 			if ($counter == 1) {
 				// Create sql query for just make
-				$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
-				//$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
+				//$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+				$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
 				// check connection
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
@@ -78,8 +79,8 @@
 			}
 			else {
 				// Create sql query for each value not left blank
-				$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
-				//$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
+				//$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+				$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
 				// check connection
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
