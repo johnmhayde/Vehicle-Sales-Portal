@@ -36,6 +36,6 @@
     </form>
 
 		<br><br>
-		<a href="index.html">Log Out</a>
+		<a href="admin_homepage.html">Admin Homepage</a>
   </body>
 </html>
