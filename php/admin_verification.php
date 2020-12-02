@@ -3,8 +3,8 @@
 if($_SERVER["REQUEST_METHOD"] == "POST") {
   if( $_POST["username"] != '' && $_POST["password"] != '') {
       // Since user info approved, add them to user table
-			//$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
-			$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
+			$conn = mysqli_connect("127.0.0.1", "root", "johnmichael06", "4620_proj");
+			//$conn = mysqli_connect("mysql1.cs.clemson.edu", "cpsc4620_1_1ncu", "johnmichael06", "cpsc4620_1_7ma4");
 			// Check connection
 			if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				while($row = $result->fetch_assoc()) {
 					if($row["password"] == $_POST["password"]) {
 						// Correct info, redirect user to home page
-						echo "<script> window.location.assign('../homepage.html'); </script>";
+						echo "<script> window.location.assign('../admin_homepage.html'); </script>";
 					}
 					// Password not correct
 					else {

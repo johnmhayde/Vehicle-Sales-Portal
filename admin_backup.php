@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Backup Database Tables</title>
+  </head>
+  <body>
+    <h1>Admin Backup Database Tables</h1>
+		<a href="php/backup_database.php">Click here to create backups of each table and download the database tables in JSON format</a><br><br>
+		<a href="admin_homepage">Admin Homepage</a>
+  </body>
+</html>
