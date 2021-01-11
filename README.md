@@ -1,9 +1,7 @@
-# Vehicle-Sales-Portal
+# Vehicle-Sales-Portal 
+This web portal serves as a sample car sales portal. It is built off of HTML and PHP, and uses MySQL to store data. Python programs are contained in the data folder that generate sample data for the database.
 
-## Team Members
-John Michael Hayde: jhayde@clemson.edu
-
-# Structure of Source Code
+## Structure of Source Code
 My source code has a very simple structure. All front-facing pages that are
 accessible by clicking on links shown on the  pages are on the main directory.
 This includes files such as index.html, and any files you can access from there.
